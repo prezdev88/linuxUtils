@@ -1,0 +1,17 @@
+# !/bin/bash
+# yay -S xscreensaver
+
+PROCESO=$(ps -A | grep xscreensaver)
+
+# Si no existe el proceso
+if [ -z "$PROCESO" ] 
+then
+    echo "Iniciando proceso..."
+    xscreensaver &
+    echo "Proceso iniciado"
+fi
+
+echo $PID
+
+xscreensaver-command -lock
+#date +'%m-%d-%Y %H:%M:%S'

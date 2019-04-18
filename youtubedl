@@ -1,0 +1,1 @@
+youtube-dl --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" https://www.youtube.com/playlist?list=PLDqpZiwOoJLzp7bG4HuW6__OzTjuvLZnX

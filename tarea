@@ -1,0 +1,33 @@
+#!/bin/bash
+# https://www.lawebdelprogramador.com/foros/Linux-Unix-Shell-Scripting/1354692-Listado-de-operadores-de-comparaciones-en-bash.html
+
+CARPETA_TAREA+=$HOME
+CARPETA_TAREA+="/Escritorio/tareas"
+
+# Si el usuario entrego el primer parámetro
+if [ "$1" != "" ]; then
+    # Si la carpeta no está creada
+	if [ ! -d $CARPETA_TAREA ]; then
+		echo "No existe la carpeta $CARPETA_TAREA"
+		mkdir $CARPETA_TAREA
+		echo "Carpeta $CARPETA_TAREA creada!"
+	fi
+	
+	cd $CARPETA_TAREA
+	
+	# Fecha y hora en el siguiente formato 20190329_173609
+	fecha=$(date +%Y%m%d_%H%m%S)
+	
+	nombreCarpeta+=$fecha
+	nombreCarpeta+="_"
+	nombreCarpeta+=$1
+
+	mkdir $nombreCarpeta
+	echo "Carpeta $nombreCarpeta creada!"
+	cd $nombreCarpeta
+	
+    # Crea un archivo llamado notas
+	> notas
+else
+	echo "Modo de uso: tarea error_correos"
+fi
