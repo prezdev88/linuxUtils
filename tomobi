@@ -1,0 +1,2 @@
+# pacman -S calibre
+ebook-convert $1 /run/media/prez/Kindle/documents/$2.mobi
