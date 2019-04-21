@@ -1,126 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<openbox_menu>
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
 	<menu id="root-menu" label="Principal">
-		<item label="PCManFM">
+		<item icon="/home/prez/.icons/folder.png" label="PCManFM">
 			<action name="Execute">
 				<execute>pcmanfm</execute>
 			</action>
 		</item>
-		<item label="Terminal [Xterm]">
+		<separator/>
+		<item icon="/home/prez/.icons/edit.png" label="Editar notas...">
 			<action name="Execute">
-				<execute>xterm</execute>
+				<execute>kate /home/prez/proyectos_programación/linuxUtils/openbox/notas</execute>
 			</action>
 		</item>
-		<menu id="root-menu-94721" label="Internet">
-			<item label="Chromium">
-				<action name="Execute">
-					<execute>chromium</execute>
-				</action>
-			</item>
-		</menu>
 		<separator/>
-		<menu id="root-menu-88473" label="Desarrollo">
-			<item label="Android Studio">
+		<menu icon="/home/prez/.icons/apps.png" id="root-menu-1122" label="Programas">
+			<menu icon="/home/prez/.icons/develop.png" id="root-menu-88473" label="Desarrollo">
+				<item icon="/home/prez/.icons/android.png" label="Android Studio">
+					<action name="Execute">
+						<execute>android-studio</execute>
+					</action>
+				</item>
+				<item icon="/home/prez/.icons/netbeans.png" label="Netbeans">
+					<action name="Execute">
+						<execute>netbeans</execute>
+					</action>
+				</item>
+				<item icon="/home/prez/.icons/pycharm.png" label="Pycharm">
+					<action name="Execute">
+						<execute>pycharm</execute>
+					</action>
+				</item>
+				<separator/>
+				<item icon="/home/prez/.icons/gitkraken.png" label="Git Kraken">
+					<action name="Execute">
+						<execute>gitkraken</execute>
+					</action>
+				</item>
+				<separator/>
+				<item icon="/home/prez/.icons/dbeaver.png" label="DBeaver">
+					<action name="Execute">
+						<execute>dbeaver</execute>
+					</action>
+				</item>
+				<item icon="/home/prez/.icons/vscode.png" label="Visual studio code">
+					<action name="Execute">
+						<execute>code</execute>
+					</action>
+				</item>
+			</menu>
+			<menu icon="/home/prez/.icons/internet.png" id="root-menu-94721" label="Internet">
+				<item icon="/home/prez/.icons/chromium.png" label="Chromium">
+					<action name="Execute">
+						<execute>chromium</execute>
+					</action>
+				</item>
+			</menu>
+			<item icon="/home/prez/.icons/edit.png" label="Kate">
 				<action name="Execute">
-					<execute>android-studio</execute>
+					<execute>kate</execute>
 				</action>
 			</item>
-			<item label="Netbeans">
+			<menu icon="/home/prez/.icons/music.png" id="root-menu-105637" label="Música">
+				<item icon="/home/prez/.icons/jplay.png" label="JPlay">
+					<action name="Execute">
+						<execute>sh /home/prez/jplay/xjplay.run</execute>
+					</action>
+				</item>
+				<item icon="/home/prez/.icons/winamp.png" label="Audacious">
+					<action name="Execute">
+						<execute>audacious</execute>
+					</action>
+				</item>
+				<item icon="/home/prez/.icons/spotify.png" label="Spotify">
+					<action name="Execute">
+						<execute>spotify</execute>
+					</action>
+				</item>
+			</menu>
+			<item icon="/home/prez/.icons/minecraft.png" label="Minecraft">
 				<action name="Execute">
-					<execute>netbeans</execute>
+					<execute>minecraft</execute>
 				</action>
 			</item>
-			<item label="Pycharm">
+			<menu icon="/home/prez/.icons/libre.png" id="root-menu-98393" label="Libreoffice">
+				<item icon="/home/prez/.icons/calc.png" label="Calc">
+					<action name="Execute">
+						<execute>libreoffice --calc</execute>
+					</action>
+				</item>
+				<item icon="/home/prez/.icons/impress.png" label="Impress">
+					<action name="Execute">
+						<execute>libreoffice --impressicon="/home/prez/.icons/terminal.png"</execute>
+					</action>
+				</item>
+				<item icon="/home/prez/.icons/writer.png" label="Writer">
+					<action name="Execute">
+						<execute>libreoffice --writer</execute>
+					</action>
+				</item>
+			</menu>
+			<item icon="/home/prez/.icons/terminal.png" label="Terminal [Xterm]">
 				<action name="Execute">
-					<execute>pycharm</execute>
-				</action>
-			</item>
-			<separator/>
-			<item label="Git Kraken">
-				<action name="Execute">
-					<execute>gitkraken</execute>
-				</action>
-			</item>
-			<separator/>
-			<item label="DBeaver">
-				<action name="Execute">
-					<execute>dbeaver</execute>
-				</action>
-			</item>
-			<item label="Visual studio code">
-				<action name="Execute">
-					<execute>code</execute>
+					<execute>xterm</execute>
 				</action>
 			</item>
 		</menu>
+
 		<separator/>
-		<menu id="root-menu-105637" label="Música">
-			<item label="JPlay">
-				<action name="Execute">
-					<execute>sh /home/prez/jplay/xjplay.run</execute>
-				</action>
-			</item>
-			<item label="Audacious">
-				<action name="Execute">
-					<execute>audacious</execute>
-				</action>
-			</item>
-			<item label="Spotify">
-				<action name="Execute">
-					<execute>spotify</execute>
-				</action>
-			</item>
-		</menu>
-		<item label="Kate">
-			<action name="Execute">
-				<execute>kate</execute>
-			</action>
-		</item>
-		<item label="Minecraft">
-			<action name="Execute">
-				<execute>minecraft</execute>
-			</action>
-		</item>
-		<menu id="root-menu-98393" label="Libreoffice">
-			<item label="Calc">
-				<action name="Execute">
-					<execute>libreoffice --calc</execute>
-				</action>
-			</item>
-			<item label="Impress">
-				<action name="Execute">
-					<execute>libreoffice --impress</execute>
-				</action>
-			</item>
-			<item label="Writer">
-				<action name="Execute">
-					<execute>libreoffice --writer</execute>
-				</action>
-			</item>
-		</menu>
-		<separator/>
-		<menu id="root-menu-134812" label="Preferences">
-			<item label="Audio">
+		
+		<menu icon="/home/prez/.icons/settings.png" id="root-menu-134812" label="Preferences">
+			<item icon="/home/prez/.icons/audio.png" label="Audio">
 				<action name="Execute">
 					<execute>pavucontrol</execute>
 				</action>
 			</item>
-			<item label="Nitrogen">
+			<item icon="/home/prez/.icons/wallpaper.png" label="Nitrogen">
 				<action name="Execute">
 					<execute>nitrogen</execute>
 				</action>
 			</item>
-			<item label="Energía">
+			<item icon="/home/prez/.icons/battery.png" label="Energía">
 				<action name="Execute">
 					<execute>xfce4-power-manager-settings</execute>
 				</action>
 			</item>
-			<item label="Lxappearance">
+			<item icon="/home/prez/.icons/colors.png" label="Lxappearance">
 				<action name="Execute">
 					<execute>lxappearance</execute>
 				</action>
 			</item>
-			<item label="ObConf">
+			<item icon="/home/prez/.icons/menu.png" label="ObConf">
 				<action name="Execute">
 					<execute>obconf</execute>
 				</action>
@@ -137,27 +146,28 @@
 			</action>
 		</item>
 		<separator/>
-		<item label="XBrillo">
-			<action name="Execute">
-				<execute>java -jar /home/prez/proyectos_programación/xbrillo/dist/XBrillo.jar</execute>
-			</action>
-		</item>
-		<item label="LockScreen">
+		<item icon="/home/prez/.icons/screensaver.png" label="LockScreen">
 			<action name="Execute">
 				<execute>lock</execute>
 			</action>
 		</item>
-		<menu id="root-menu-274952" label="Salir">
-			<item label="Cerrar Sesión">
+		<item icon="/home/prez/.icons/light.png" label="XBrillo">
+			<action name="Execute">
+				<execute>java -jar /home/prez/proyectos_programación/xbrillo/dist/XBrillo.jar</execute>
+			</action>
+		</item>
+		<separator/>
+		<menu icon="/home/prez/.icons/exit.png" id="root-menu-274952" label="Salir">
+			<item icon="/home/prez/.icons/logout.png" label="Cerrar Sesión">
 				<action name="Exit"/>
 			</item>
 			<separator/>
-			<item label="Reiniciar">
+			<item icon="/home/prez/.icons/restart.png" label="Reiniciar">
 				<action name="Execute">
 					<execute>reboot</execute>
 				</action>
 			</item>
-			<item label="Apagar">
+			<item icon="/home/prez/.icons/shutdown.png" label="Apagar">
 				<action name="Execute">
 					<execute>poweroff</execute>
 				</action>
