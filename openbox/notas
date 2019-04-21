@@ -12,8 +12,10 @@ cp /etc/xdg/openbox/{rc.xml,menu.xml,autostart,environment} ~/.config/openbox
 # network-manager-applet	: Ícono de wifi en tint2
 # lxappearance				: Programa para configurar openbox	
 # xfce4-power-manager		: Preferencias de energia (Abrir el programa xfce4-power-manager-settings y activar "Icono de bandeja en sistema")
+# volumeicon				: Ícono de volumen para tint2
+# file-roller				: Extractor de zips gráfico
 
-pacman -S xfce4-power-manager openbox-themes nitrogen obconf menumaker tint2 network-manager-applet lxappearance
+pacman -S file-roller volumeicon xfce4-power-manager openbox-themes nitrogen obconf menumaker tint2 network-manager-applet lxappearance
 
 systemctl start NetworkManager
 
@@ -26,6 +28,8 @@ pacman -S pavucontrol
 # Programa para establecer el fondo de pantalla en openbox
 pacman -S feh
 
+# Programa 7zip gráfico
+yay -S p7zip-gui
 
 
 
@@ -34,6 +38,7 @@ pacman -S feh
 tint2 &
 guake &
 nm-applet &
+volumeicon &
 
 # teclado español
 setxkbmap -model pc104 -layout es,us -variant deadtilde,dvorak -option grp:alt_shift_toggle
