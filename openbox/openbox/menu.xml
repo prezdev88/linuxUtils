@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu>
+	<menu id="root-menu" label="Principal">
+		<item label="PCManFM">
+			<action name="Execute">
+				<execute>pcmanfm</execute>
+			</action>
+		</item>
+		<item label="Terminal [Xterm]">
+			<action name="Execute">
+				<execute>xterm</execute>
+			</action>
+		</item>
+		<menu id="root-menu-94721" label="Internet">
+			<item label="Chromium">
+				<action name="Execute">
+					<execute>chromium</execute>
+				</action>
+			</item>
+		</menu>
+		<separator/>
+		<menu id="root-menu-88473" label="Desarrollo">
+			<item label="Android Studio">
+				<action name="Execute">
+					<execute>android-studio</execute>
+				</action>
+			</item>
+			<item label="Netbeans">
+				<action name="Execute">
+					<execute>netbeans</execute>
+				</action>
+			</item>
+			<item label="Pycharm">
+				<action name="Execute">
+					<execute>pycharm</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="Git Kraken">
+				<action name="Execute">
+					<execute>gitkraken</execute>
+				</action>
+			</item>
+			<separator/>
+			<item label="DBeaver">
+				<action name="Execute">
+					<execute>dbeaver</execute>
+				</action>
+			</item>
+			<item label="Visual studio code">
+				<action name="Execute">
+					<execute>code</execute>
+				</action>
+			</item>
+		</menu>
+		<separator/>
+		<menu id="root-menu-105637" label="Música">
+			<item label="JPlay">
+				<action name="Execute">
+					<execute>sh /home/prez/jplay/xjplay.run</execute>
+				</action>
+			</item>
+			<item label="Audacious">
+				<action name="Execute">
+					<execute>audacious</execute>
+				</action>
+			</item>
+			<item label="Spotify">
+				<action name="Execute">
+					<execute>spotify</execute>
+				</action>
+			</item>
+		</menu>
+		<item label="Kate">
+			<action name="Execute">
+				<execute>kate</execute>
+			</action>
+		</item>
+		<item label="Minecraft">
+			<action name="Execute">
+				<execute>minecraft</execute>
+			</action>
+		</item>
+		<menu id="root-menu-98393" label="Libreoffice">
+			<item label="Calc">
+				<action name="Execute">
+					<execute>libreoffice --calc</execute>
+				</action>
+			</item>
+			<item label="Impress">
+				<action name="Execute">
+					<execute>libreoffice --impress</execute>
+				</action>
+			</item>
+			<item label="Writer">
+				<action name="Execute">
+					<execute>libreoffice --writer</execute>
+				</action>
+			</item>
+		</menu>
+		<separator/>
+		<menu id="root-menu-134812" label="Preferences">
+			<item label="Audio">
+				<action name="Execute">
+					<execute>pavucontrol</execute>
+				</action>
+			</item>
+			<item label="Nitrogen">
+				<action name="Execute">
+					<execute>nitrogen</execute>
+				</action>
+			</item>
+			<item label="Energía">
+				<action name="Execute">
+					<execute>xfce4-power-manager-settings</execute>
+				</action>
+			</item>
+			<item label="Lxappearance">
+				<action name="Execute">
+					<execute>lxappearance</execute>
+				</action>
+			</item>
+			<item label="ObConf">
+				<action name="Execute">
+					<execute>obconf</execute>
+				</action>
+			</item>
+			<item label="ObMenu">
+				<action name="Execute">
+					<execute>obmenu</execute>
+				</action>
+			</item>
+		</menu>
+		<item label="Reiniciar openbox">
+			<action name="Execute">
+				<execute>openbox --restart</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="XBrillo">
+			<action name="Execute">
+				<execute>java -jar /home/prez/proyectos_programación/xbrillo/dist/XBrillo.jar</execute>
+			</action>
+		</item>
+		<item label="LockScreen">
+			<action name="Execute">
+				<execute>lock</execute>
+			</action>
+		</item>
+		<menu id="root-menu-274952" label="Salir">
+			<item label="Cerrar Sesión">
+				<action name="Exit"/>
+			</item>
+			<separator/>
+			<item label="Reiniciar">
+				<action name="Execute">
+					<execute>reboot</execute>
+				</action>
+			</item>
+			<item label="Apagar">
+				<action name="Execute">
+					<execute>poweroff</execute>
+				</action>
+			</item>
+		</menu>
+	</menu>
+</openbox_menu>

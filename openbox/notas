@@ -1,0 +1,47 @@
+# Instalación de openbox (https://blog.desdelinux.net/instalacion-de-openbox-en-arch-linux/)
+pacman -S openbox
+mkdir -p ~/.config/openbox
+cp /etc/xdg/openbox/{rc.xml,menu.xml,autostart,environment} ~/.config/openbox
+
+# Instalación de complementos para openbox
+
+# nitrogen					: Programa para colocar un fondo de pantalla de forma estática
+# obconf					: Programa de configuración de openbox
+# menumaker					: Programa para generar archivo menu.xml automáticamente según programas instalados
+# tint2						: Barra inferior básica
+# network-manager-applet	: Ícono de wifi en tint2
+# lxappearance				: Programa para configurar openbox	
+# xfce4-power-manager		: Preferencias de energia (Abrir el programa xfce4-power-manager-settings y activar "Icono de bandeja en sistema")
+
+pacman -S xfce4-power-manager openbox-themes nitrogen obconf menumaker tint2 network-manager-applet lxappearance
+
+systemctl start NetworkManager
+
+# Programa para ver particiones ntfs
+sudo pacman -S ntfs-3g
+
+# Pulse audio volume control
+pacman -S pavucontrol
+
+# Programa para establecer el fondo de pantalla en openbox
+pacman -S feh
+
+
+
+
+
+# Respaldo de .xinitrc
+tint2 &
+guake &
+nm-applet &
+
+# teclado español
+setxkbmap -model pc104 -layout es,us -variant deadtilde,dvorak -option grp:alt_shift_toggle
+
+exec openbox-session
+
+
+
+
+# respaldo de .config/openbox/autostart
+feh --bg-scale /home/prez/Imágenes/linux-wallpaper-1920x1080-1112001.jpg
