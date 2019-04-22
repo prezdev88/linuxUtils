@@ -12,6 +12,13 @@
 				<execute>kate /home/prez/proyectos_programación/linuxUtils/openbox/notas</execute>
 			</action>
 		</item>
+		
+		<item icon="/home/prez/.icons/edit.png" label="Editar menu.xml...">
+			<action name="Execute">
+				<execute>kate /home/prez/.config/openbox/menu.xml</execute>
+			</action>
+		</item>
+		
 		<separator/>
 		<menu icon="/home/prez/.icons/apps.png" id="root-menu-1122" label="Programas">
 			<menu icon="/home/prez/.icons/develop.png" id="root-menu-88473" label="Desarrollo">
@@ -20,16 +27,31 @@
 						<execute>android-studio</execute>
 					</action>
 				</item>
+				
 				<item icon="/home/prez/.icons/netbeans.png" label="Netbeans">
 					<action name="Execute">
 						<execute>netbeans</execute>
 					</action>
 				</item>
+				
 				<item icon="/home/prez/.icons/pycharm.png" label="Pycharm">
 					<action name="Execute">
 						<execute>pycharm</execute>
 					</action>
 				</item>
+				
+				<item icon="/home/prez/.icons/mark.png" label="Remarkable">
+					<action name="Execute">
+						<execute>remarkable</execute>
+					</action>
+				</item>
+				
+				<item icon="/home/prez/.icons/mark.png" label="ReText">
+					<action name="Execute">
+						<execute>retext</execute>
+					</action>
+				</item>
+				
 				<separator/>
 				<item icon="/home/prez/.icons/gitkraken.png" label="Git Kraken">
 					<action name="Execute">
@@ -60,6 +82,21 @@
 					<execute>kate</execute>
 				</action>
 			</item>
+			
+			<menu id="juegos" label="Juegos">
+				<item icon="/home/prez/.icons/minecraft.png" label="Minecraft">
+					<action name="Execute">
+						<execute>minecraft</execute>
+					</action>
+				</item>
+				
+				<item label="Steam">
+					<action name="Execute">
+						<execute>steam</execute>
+					</action>
+				</item>
+			</menu>
+			
 			<menu icon="/home/prez/.icons/music.png" id="root-menu-105637" label="Música">
 				<item icon="/home/prez/.icons/jplay.png" label="JPlay">
 					<action name="Execute">
@@ -77,11 +114,7 @@
 					</action>
 				</item>
 			</menu>
-			<item icon="/home/prez/.icons/minecraft.png" label="Minecraft">
-				<action name="Execute">
-					<execute>minecraft</execute>
-				</action>
-			</item>
+			
 			<menu icon="/home/prez/.icons/libre.png" id="root-menu-98393" label="Libreoffice">
 				<item icon="/home/prez/.icons/calc.png" label="Calc">
 					<action name="Execute">
