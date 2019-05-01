@@ -6,7 +6,15 @@
 				<execute>pcmanfm</execute>
 			</action>
 		</item>
+		
+		<item icon="/home/prez/.icons/chromium.png" label="Chromium">
+			<action name="Execute">
+				<execute>chromium</execute>
+			</action>
+		</item>
+		
 		<separator/>
+		
 		<item icon="/home/prez/.icons/edit.png" label="Editar notas...">
 			<action name="Execute">
 				<execute>kate /home/prez/proyectos_programación/linuxUtils/openbox/notas</execute>
@@ -53,30 +61,44 @@
 				</item>
 				
 				<separator/>
+				
 				<item icon="/home/prez/.icons/gitkraken.png" label="Git Kraken">
 					<action name="Execute">
 						<execute>gitkraken</execute>
 					</action>
 				</item>
+				
 				<separator/>
+				
 				<item icon="/home/prez/.icons/dbeaver.png" label="DBeaver">
 					<action name="Execute">
 						<execute>dbeaver</execute>
 					</action>
 				</item>
+				
+				<item label="Robo3t">
+					<action name="Execute">
+						<execute>robo3t</execute>
+					</action>
+				</item>
+				
+				<separator/>
+				
 				<item icon="/home/prez/.icons/vscode.png" label="Visual studio code">
 					<action name="Execute">
 						<execute>code</execute>
 					</action>
 				</item>
 			</menu>
-			<menu icon="/home/prez/.icons/internet.png" id="root-menu-94721" label="Internet">
+			
+			<!-- <menu icon="/home/prez/.icons/internet.png" id="root-menu-94721" label="Internet">
 				<item icon="/home/prez/.icons/chromium.png" label="Chromium">
 					<action name="Execute">
 						<execute>chromium</execute>
 					</action>
 				</item>
-			</menu>
+			</menu>-->
+			
 			<item icon="/home/prez/.icons/edit.png" label="Kate">
 				<action name="Execute">
 					<execute>kate</execute>
@@ -132,11 +154,34 @@
 					</action>
 				</item>
 			</menu>
+			
 			<item icon="/home/prez/.icons/terminal.png" label="Terminal [Xterm]">
 				<action name="Execute">
 					<execute>xterm</execute>
 				</action>
 			</item>
+			
+			<separator/>
+			
+			<menu id="menuOtros" label="Otros">
+				<item icon="/home/prez/.icons/shutter.png" label="Shutter">
+					<action name="Execute">
+						<execute>shutter</execute>
+					</action>
+				</item>
+				
+				<item icon="/home/prez/.icons/obs.png" label="OBS Studio">
+					<action name="Execute">
+						<execute>obs</execute>
+					</action>
+				</item>
+				
+				<item icon="/home/prez/.icons/vbox.png" label="Virtualbox">
+					<action name="Execute">
+						<execute>virtualbox</execute>
+					</action>
+				</item>
+			</menu>
 		</menu>
 
 		<separator/>
