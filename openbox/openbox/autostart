@@ -16,4 +16,4 @@
 #
 #xfce-mcs-manager &
 
-feh --bg-scale /home/prez/Imágenes/linux-wallpaper-1920x1080-1112001.jpg &
+feh --bg-max /home/prez/Imágenes/djent.png &
