@@ -7,6 +7,9 @@
                 <execute>pcmanfm</execute>
             </action>
         </item>
+		
+		<separator label="Navegadores"/>
+		
         <item icon="/home/prez/.icons/chromium.png" label="Chromium">
             <action name="Execute">
                 <execute>chromium</execute>
@@ -37,15 +40,7 @@
             </action>
         </item>
         <separator/>
-        <menu icon="/home/prez/.icons/apps.png" id="root-menu-1122" label="Programas">
-            <!-- <menu icon="/home/prez/.icons/internet.png" id="root-menu-94721" label="Internet">
-				<item icon="/home/prez/.icons/chromium.png" label="Chromium">
-					<action name="Execute">
-						<execute>chromium</execute>
-					</action>
-				</item>
-			</menu>-->
-            <menu icon="/home/prez/.icons/develop.png" id="root-menu-88473" label="Desarrollo">
+		<menu icon="/home/prez/.icons/develop.png" id="root-menu-88473" label="Desarrollo">
                 <item icon="/home/prez/.icons/android.png" label="Android Studio">
                     <action name="Execute">
                         <execute>android-studio</execute>
@@ -109,6 +104,16 @@
                     </action>
                 </item>
             </menu>
+			<separator/>
+        <menu icon="/home/prez/.icons/apps.png" id="root-menu-1122" label="Programas">
+            <!-- <menu icon="/home/prez/.icons/internet.png" id="root-menu-94721" label="Internet">
+				<item icon="/home/prez/.icons/chromium.png" label="Chromium">
+					<action name="Execute">
+						<execute>chromium</execute>
+					</action>
+				</item>
+			</menu>-->
+            
             <item icon="/home/prez/.icons/edit.png" label="Kate">
                 <action name="Execute">
                     <execute>kate</execute>
@@ -167,6 +172,11 @@
             </item>
             <separator/>
             <menu id="menuOtros" label="Otros">
+				<item label="Gimp">
+                    <action name="Execute">
+                        <execute>gimp</execute>
+                    </action>
+                </item>
                 <item icon="/home/prez/.icons/shutter.png" label="Shutter">
                     <action name="Execute">
                         <execute>shutter</execute>
@@ -175,6 +185,11 @@
                 <item icon="/home/prez/.icons/obs.png" label="OBS Studio">
                     <action name="Execute">
                         <execute>obs</execute>
+                    </action>
+                </item>
+				<item label="Telegram">
+                    <action name="Execute">
+                        <execute>telegram-desktop</execute>
                     </action>
                 </item>
                 <item icon="/home/prez/.icons/vbox.png" label="Virtualbox">
