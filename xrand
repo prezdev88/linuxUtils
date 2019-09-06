@@ -1,5 +1,0 @@
-# listado de outputs
-xrandr -q
-xrandr --output HDMI2 --auto --same-as eDP1
-xrandr --output HDMI2 --auto --left-of eDP1
-

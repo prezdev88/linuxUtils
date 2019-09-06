@@ -1,3 +1,0 @@
-iwlist wlp4s0 scan | grep ESSID:
-iwconfig wlp4s0 essid "VTR-8952940" key "8zzmzphYwbnf"
-dhclient wlp4s0
