@@ -1,1 +1,4 @@
-youtube-dl --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" https://www.youtube.com/playlist?list=PLDqpZiwOoJLzp7bG4HuW6__OzTjuvLZnX
+# Descargar un listado de youtube como best audio, con metadata y thumbnail
+# videos: Es el listo de videos, ya que no pude hacer que funcionara con el listado de youtube
+# http://www.williamsportwebdeveloper.com/FavBackUp.aspx: Página para obtener los links de una lista de reproducción en excel
+youtube-dl -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0 --add-metadata --embed-thumbnail -o "%(title)s.%(ext)s" -a videos

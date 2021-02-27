@@ -1,0 +1,20 @@
+[Desktop Entry]
+Comment[es_ES]=
+Comment=
+Exec=/bin/screenoff
+GenericName[es_ES]=
+GenericName=
+Icon=system-run
+MimeType=
+Name[es_ES]=screenoff-desktop
+Name=screenoff-desktop
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-RunOnDiscreteGpu=false
+X-KDE-SubstituteUID=false
+X-KDE-Username=
